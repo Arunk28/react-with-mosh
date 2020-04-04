@@ -11,6 +11,16 @@ state = {
   counters :[{id :1 ,value:4},{id :2 ,value:0},{id :3 ,value:0},{id :4 ,value:0}]
 }
 
+constructor(){
+  super();
+  console.log("App-constructor")   //constructor
+}
+
+componentDidMount(){
+  //right place to mount
+  console.log('App-Mounted');
+}
+
 handleDelete =(counterId)=>{
   const counters = this.state.counters.filter(c=>c.id !== counterId)
   this.setState({counters});
@@ -42,4 +52,7 @@ handleReset =()=>{
 }
  
 export default App;
+
+//lifecyscle Hooks
+ /// Mount phase
  

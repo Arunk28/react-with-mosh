@@ -1,5 +1,17 @@
 import React, { Component } from 'react';   
 class Counter1 extends Component {
+
+componentDidMount(prevProps,prevState){
+
+    //update the component will call if diff value make a call and change it
+}
+
+componentWillMount(){
+//delete the component will call 
+//memory leaks clean ups 
+
+}
+
     //state = { count: this.props.c.value  }
     render() { 
         return (
